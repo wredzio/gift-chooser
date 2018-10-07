@@ -13,7 +13,7 @@ export interface IAppStore {
 
 export class AppStore implements IAppStore {
   chooseWheelStore: IChooseWheelStore;
-  @observable currentChooser: Member & Choose;
+  @observable currentChooser: Member & Choose = { name : '', id: 0, isChoosed: false, choosedMemberId: 0 };
   members: Array<Member & Choose>;
   @observable isReady: boolean;
 
