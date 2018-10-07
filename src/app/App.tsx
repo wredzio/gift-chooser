@@ -15,9 +15,9 @@ class App extends React.Component<AppProps> {
   }
 
   render() {
-    const { currentChooser, isReady, chooseWheelStore } = this.props.appStore;
+    const { currentChooser, isReady } = this.props.appStore;
 
-    return isReady ? (
+    return isReady && !!currentChooser ? (
       <React.Fragment>
         <h1>
           Witaj {currentChooser.name}
