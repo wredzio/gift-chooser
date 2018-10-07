@@ -3,6 +3,8 @@ import * as ReactDOM from 'react-dom';
 import App, { AppProps } from './app/App';
 import { AppStore } from './app/AppStore';
 import './styles/index.css';
+import InitDatabase from './firebase/InitDatabase';
+import { Database } from './firebase/Database';
 
 const render = async (
   root: any,
@@ -15,4 +17,6 @@ const render = async (
   );
 };
 
-render(App, { appStore: new AppStore() } as AppProps);
+InitDatabase();
+
+render(App, { appStore: new AppStore(new Database())} as AppProps);

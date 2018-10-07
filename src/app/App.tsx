@@ -1,6 +1,7 @@
 import { observer } from 'mobx-react';
 import * as React from 'react';
 import { IAppStore } from './AppStore';
+import ChooseWheel from './ChooseWheel/ChooseWheel';
 
 export interface AppProps {
   appStore: IAppStore;
@@ -14,13 +15,26 @@ class App extends React.Component<AppProps> {
   }
 
   render() {
-    const { appStore } = this.props;
+    const { currentChooser, isReady, chooseWheelStore } = this.props.appStore;
 
-    return (
-      <div>
-        aaa
-      </div>
-    );
+    return isReady ? (
+      <React.Fragment>
+        <h1>
+          Witaj {currentChooser.name}
+        </h1>
+        <div>
+          {this.renderWheel()}
+        </div>
+      </React.Fragment>
+    ) : null;
+  }
+
+  renderWheel() {
+    const { currentChooser, chooseWheelStore, members } = this.props.appStore;
+
+    return !currentChooser.choosedMemberId ?
+      (<ChooseWheel chooseWheelStore={chooseWheelStore} />) :
+      (<span>Wylosowałeś {members.find(o => o.id === currentChooser.choosedMemberId).name}</span>);
   }
 }
 

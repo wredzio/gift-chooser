@@ -10,6 +10,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "firebase": "^5.5.3",
     "gh-pages": "^2.0.1",
     "helpful-decorators": "^1.7.2",
     "mobx": "^5.1.0",
