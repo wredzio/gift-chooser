@@ -1,0 +1,89 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Bożena",
+      "isChoosed": false,
+      "choosedMemberId": 0
+    },
+    {
+      "id": 2,
+      "name": "Mariusz",
+      "isChoosed": false,
+      "choosedMemberId": 0
+    },
+    {
+      "id": 3,
+      "name": "Emi",
+      "isChoosed": false,
+      "choosedMemberId": 0
+    },
+    {
+      "id": 4,
+      "name": "Kaśka",
+      "isChoosed": false,
+      "choosedMemberId": 0
+    },
+    {
+      "id": 5,
+      "name": "Wojtek",
+      "isChoosed": false,
+      "choosedMemberId": 0
+    },
+    {
+      "id": 6,
+      "name": "Paweł",
+      "isChoosed": false,
+      "choosedMemberId": 0
+    },
+    {
+      "id": 7,
+      "name": "Dominika",
+      "isChoosed": false,
+      "choosedMemberId": 0
+    }
+  ],
+  "events": [
+      {
+        "id": 1,
+        "name": "Święta 2018",
+        "members": [
+          {
+            "id": 1,
+            "isChoosed": false,
+            "choosedMemberId": 0
+          },
+          {
+            "id": 2,
+            "isChoosed": false,
+            "choosedMemberId": 0
+          },
+          {
+            "id": 3,
+            "isChoosed": false,
+            "choosedMemberId": 0
+          },
+          {
+            "id": 4,
+            "isChoosed": false,
+            "choosedMemberId": 0
+          },
+          {
+            "id": 5,
+            "isChoosed": false,
+            "choosedMemberId": 0
+          },
+          {
+            "id": 6,
+            "isChoosed": false,
+            "choosedMemberId": 0
+          },
+          {
+            "id": 7,
+            "isChoosed": false,
+            "choosedMemberId": 0
+          }
+        ]
+      }
+    ]
+  }
